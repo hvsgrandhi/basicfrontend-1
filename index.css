@@ -1,0 +1,151 @@
+body{
+    background-color: rgba(19,19,19,255);
+    color: white;
+    font-size: large;
+    font-family: "Barlow";
+}
+
+a{
+    text-decoration: none;
+}
+
+.navbar {
+    display: flex;
+    /* justify-content: flex-end; */
+    font-size: 23px;
+}
+.left{
+    margin-left: 0px;
+}
+.right{
+    margin-left: auto;
+    
+}
+.right ul {
+    display: flex;
+    gap: 42px;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px; /* Adjust the gap for smaller screens */
+    }
+    .navbar {
+        flex-direction: column; /* Stack left and right divs vertically */
+        
+    }
+    .left, .right {
+        margin: 0; /* Reset margin for smaller screens */
+    }
+}
+.navbar ul li{
+    /* padding: 15px; */
+    list-style: none;
+}
+.navbar ul li a{
+    color: white;  
+}
+
+
+
+
+.second{
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.third{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+/* @keyframes third {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 400% 0;
+    }
+} */
+
+
+.forth{
+    display: flex;
+}
+
+.fleft{
+    width: 50%;
+}
+.fright{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
+    font-size: 45px;
+    font-weight: bold;
+}
+.text{
+    font-size: 25px;
+}
+
+
+
+
+.fifth{
+    padding-top: 100px;
+    padding-left: 10px;
+    flex-direction: column;
+}
+.fifthone{
+    display: flex;
+    margin-bottom: 38px;
+}
+
+
+
+.foot{
+    background-color: #1F1F1F;
+    display: flex;
+
+}
+.footupdate li{
+    padding-top: 10px;
+}
+
+
+@media (max-width: 1290px){
+    .forth{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .fleft{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1148px){
+    .fifthone{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 747px){
+    .foot{
+        flex-direction: column;
+        width: 100vw;
+    }
+}
